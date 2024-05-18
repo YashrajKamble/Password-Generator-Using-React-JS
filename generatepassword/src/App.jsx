@@ -41,7 +41,7 @@ function App() {
             Copy
           </button>
         </div>
-        <div className="flex text-sm gap-x-7">
+        <div className="flex text-sm gap-x-5">
           <div className="flex items-center gap-x-1">
             <input
               type="range"
@@ -71,10 +71,10 @@ function App() {
           <div className="flex items-center gap-x-1">
             <input
               type="checkbox"
-              defaultChecked={numberAllowed}
+              defaultChecked={charAllowed}
               id="numberInput"
               onChange={() => {
-                setNumberAllowed((prev) => !prev);
+                setCharAllowed((prev) => !prev);
               }}
             />
             <label htmlFor="numberAllowed">Characters</label>
